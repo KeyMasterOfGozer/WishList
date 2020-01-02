@@ -1,0 +1,60 @@
+:root {
+  --main-bg-color: #fff;
+  --sec-bg-color: #ddd;
+  --thr-bg-color: #888;
+  --main-fg-color: #000;
+}
+
+
+body {
+	/*background: #ddd url(http://www.oldforest.net/wishlist/hollytile.gif) repeat ;*/
+	margin: 0;
+	padding: 0;
+}
+
+a {
+   color:var(--main-fg-color);
+}
+
+button {
+   color:var(--main-bg-color);
+   background:var(--main-fg-color);
+}
+
+textarea {
+	width:100%;
+}
+
+.wishItemArea {
+	padding:5px;
+	width:95%;
+	background:var(--main-bg-color);
+	border-top:   1px solid var(--sec-bg-color);
+	border-bottom:1px solid var(--thr-bg-color);
+	border-left:  1px solid var(--thr-bg-color);
+	border-right: 1px solid var(--sec-bg-color);
+}
+
+
+.wishItemProp {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background:var(--sec-bg-color);
+	padding:2px;
+	margin-top:0px;
+	margin-bottom:-18px;
+}
+
+
+.wishItemPropName {
+	flex-basis: 80px;
+	text-align: right;
+}
+
+.wishItemPropVal {
+	flex-grow: 1;
+	text-align: left;
+	margin-left:10px;
+}
+
