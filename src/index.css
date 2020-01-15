@@ -1,8 +1,10 @@
 :root {
-  --main-bg-color: #fff;
-  --sec-bg-color: #ddd;
+  --main-bg-color: #000;
+  --sec-bg-color: #333;
   --thr-bg-color: #888;
-  --main-fg-color: #000;
+  --main-fg-color: #fff;
+  --button-bg-color: #ddd;
+  --button-fg-color: #333;
 }
 
 
@@ -10,6 +12,8 @@ body {
 	/*background: #ddd url(http://www.oldforest.net/wishlist/hollytile.gif) repeat ;*/
 	margin: 0;
 	padding: 0;
+	color: var(--main-fg-color);
+	background: var(--main-bg-color);
 }
 
 a {
@@ -17,12 +21,19 @@ a {
 }
 
 button {
-   color:var(--main-bg-color);
-   background:var(--main-fg-color);
+   color:var(--button-bg-color);
+   background:var(--button-fg-color);
+}
+
+input {
+	color: var(--main-fg-color);
+	background: var(--main-bg-color);
 }
 
 textarea {
 	width:100%;
+	color: var(--main-fg-color);
+	background: var(--main-bg-color);
 }
 
 .wishItemArea {
